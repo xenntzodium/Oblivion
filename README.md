@@ -1,6 +1,8 @@
 # Oblivion
 Automated Penetration Testing Tool
 
+Bu aracın temel amacı, pentest hakkında hiçbir bilgisi olmayan birinin bile temel seviyede bir pentest yapabilmesini sağlamaktır. Kullanıcı, bu sayede raporda sistemlerinde bulunan açıkları anlayıp, AI desteğiyle önerilen çözümleri uygulayarak bu açıkları kapatabilir.
+
 Oblivion Framework
 Oblivion Framework, hedef IP, domain veya subnet üzerinde tamamen otomatik çalışan, modüler bir sızma testi aracıdır. Hızlı keşif, güvenlik açığı analizi, web uygulama taraması, SQL Injection testi ve Exploit-DB üzerinden exploit araştırması gibi işlemleri tam otomatik olarak gerçekleştirir.
 
