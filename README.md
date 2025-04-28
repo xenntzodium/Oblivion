@@ -25,6 +25,7 @@ Oblivion Framework, hedef IP, domain veya subnet üzerinde tamamen otomatik çal
 
 
   📦 Modüler Yapı
+
     Oblivion/
   ├── main.py             # Ana kontrol akışı
   ├── utils.py            # Yardımcı fonksiyonlar (doğrulama, port/servis ayıklama)
