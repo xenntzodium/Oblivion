@@ -5,13 +5,13 @@ import requests
 def analyze_with_deepseek(api_key, combined_results, output_file):
     try:
         print("[BİLGİ] DeepSeek analizi başlatılıyor...")
-        url = "https://openrouter.ai/api/v1/chat/completions"
+        url = ""
         headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json"
         }
         payload = {
-            "model": "deepseek/deepseek-r1-zero:free",
+            "model": "",
             "messages": [
                 {"role": "system", "content": "You are a cybersecurity assistant analyzing Nmap scan results."},
                 {"role": "user", "content": f"Analyze the following Nmap scan results and provide a detailed report:\n\n{combined_results}"}
