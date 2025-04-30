@@ -1,5 +1,5 @@
 # main.py
-
+from dependency_checker import check_all_dependencies
 import argparse
 import os
 from datetime import datetime
@@ -51,5 +51,8 @@ def main():
     analyze_with_deepseek(args.api_key, nmap_results, f"reports/pentest_report_{timestamp}.txt")
 
 if __name__ == "__main__":
+    check_all_dependencies()
     main()
+   
+
     
