@@ -91,10 +91,3 @@ Bu araç sadece izinli hedeflerde kullanılmalıdır. Yetkisiz sistemlere yapıl
 
 👨‍💻 Geliştirici
 Proje Sahibi: zorbeyyavas
-
-
-
-
-
-
-  
