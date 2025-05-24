@@ -1,1 +1,0 @@
-Diğer dökümanlar burada bulunacak
