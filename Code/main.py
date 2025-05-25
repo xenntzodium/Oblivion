@@ -50,6 +50,18 @@ def main():
     # DeepSeek analizi
     analyze_with_deepseek(args.api_key, nmap_results, f"reports/pentest_report_{timestamp}.txt")
 
+    report_target_info = {
+        'ip': args.target,
+        'url': args.target,
+        'scan_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    #Rapor dönüştürme
+    handle_reporting(report_target_info, nmap_results, whatweb_results, deepseek_report_content, f"pentest_report_{timestamp}")
+    # ----------------------------------------
+
+    print("\n--- Tarama ve Raporlama tamamlandı! ---")
+
+    
 if __name__ == "__main__":
     check_all_dependencies()
     main()
