@@ -1,17 +1,16 @@
 # main.py
-from dependency_checker import check_all_dependencies
-import argparse
 import os
+import argparse  
 from datetime import datetime
-from utils import validate_ip_or_subnet
-from scanner import perform_full_scan, subnet_discovery
-from sqlscanner import run_sqlmap
-from dirscanner import run_gobuster
-from analyzer import analyze_with_deepseek
-from exploitscanner import search_exploits
-from utils import extract_services
-from banner import print_banner
-
+from .core.dependency_checker import check_all_dependencies
+from .core.banner import print_banner
+from .utils import validate_ip_or_subnet, extract_services # utils da src altında
+from .scanner.nmap_scanner import perform_full_scan, subnet_discovery
+from .scanner.sql_scanner import run_sqlmap
+from .scanner.dir_scanner import run_gobuster
+from .analyzer.deepseek_analyzer import analyze_with_deepseek
+from .exploit.exploit_db_searcher import search_exploits
+from reports.report_generator import handle_reporting
 def main():
     print_banner()
     parser = argparse.ArgumentParser(description="Otomatik Pentest Aracı")

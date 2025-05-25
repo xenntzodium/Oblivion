@@ -2,7 +2,7 @@
 
 import subprocess
 import os
-from utils import extract_open_ports
+from ..utils import extract_open_ports
 
 def run_nmap(command, timeout=300):
     try:
